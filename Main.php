@@ -30,7 +30,7 @@ if (isset($_POST['password']) && isset($_POST['email'])) {
         <link href="css/list.css" rel="stylesheet" type="text/css">
 
 
-        <meta charset=utf-8"/>
+        <meta charset="utf-8"/>
         <title>Trainingbook</title>
 
 
@@ -39,7 +39,7 @@ if (isset($_POST['password']) && isset($_POST['email'])) {
     <body>
     <header>
         <h1>
-            <i class=></i>Training Béook <br>
+            <i class=></i>Site d'entrainement<br>
             <span> <a href="Main.php">Baseline </a> </span>
         </h1>
 

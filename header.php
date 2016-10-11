@@ -1,4 +1,4 @@
-<!--commentaire-->
+<!--commentaire conflit avec nico-->
 <?
 session_start();
 include("include/connect.php");
@@ -15,7 +15,7 @@ echo $_SESSION;
 
 
 	<meta charset="utf-8"/>
-	<title>Trainingbook</title>
+	<title>blablabla</title>
 
 </head>
 
@@ -24,7 +24,7 @@ echo $_SESSION;
 
 <header>
 	<h1>
-		<i class=></i>Le site à Nico <br>
+		<i class=></i>Le site à Nico...<br>
 		<span> <a href="Main.php">Baseline </a> </span>
 	</h1>
 
