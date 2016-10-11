@@ -1,7 +1,7 @@
 <?php
 session_start();
 include("include/connect.php");
-
+//test commentaire
 
 if (isset($_POST['password']) && isset($_POST['email'])) {
     $query = "SELECT idUser,UserRules from user where Useremail='" . $_POST['email'] . "' and UserPasseword = '" . $_POST['password'] . "' and UserFlag='1' ";
