@@ -1,4 +1,4 @@
-<!--commentaire conflit-->
+<!--commentaire conflit avec nico-->
 <?
 session_start();
 include("include/connect.php");
