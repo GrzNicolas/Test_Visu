@@ -15,7 +15,11 @@ echo $_SESSION;
 
 
 	<meta charset="utf-8"/>
+<<<<<<< HEAD
 	<title>test</title>
+=======
+	<title>blablabla</title>
+>>>>>>> origin/DEV_B
 
 </head>
 
