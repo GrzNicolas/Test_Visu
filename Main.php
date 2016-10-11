@@ -40,6 +40,7 @@ if (isset($_POST['password']) && isset($_POST['email'])) {
     <header>
         <h1>
             <i class=></i>Site d'entrainement<br>
+            <i class=></i>Et de Chibari<br>
             <span> <a href="Main.php">Baseline </a> </span>
         </h1>
 
