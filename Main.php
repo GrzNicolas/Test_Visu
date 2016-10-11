@@ -39,7 +39,7 @@ if (isset($_POST['password']) && isset($_POST['email'])) {
     <body>
     <header>
         <h1>
-            <i class=></i>Training Béook <br>
+            <i class=></i>YIPIKAYEAH MOTHER FUCKER <br>
             <span> <a href="Main.php">Baseline </a> </span>
         </h1>
 

@@ -6,7 +6,7 @@ echo $_SESSION;
 ?>
 <html>
 <head>
-	<meta name="description" content="Tout sur les apparitions muettes de la Banane Masquée dans le cinéma colombien des années 20 et 30."/>
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 
@@ -15,7 +15,7 @@ echo $_SESSION;
 
 
 	<meta charset="utf-8"/>
-	<title>Trainingbook</title>
+	<title>test</title>
 
 </head>
 
@@ -24,7 +24,7 @@ echo $_SESSION;
 
 <header>
 	<h1>
-		<i class=></i>Le site à Nico...<br>
+		<i class=>Le site à Nico...</i><br>
 		<span> <a href="Main.php">Baseline </a> </span>
 	</h1>
 
