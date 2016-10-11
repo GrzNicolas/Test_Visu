@@ -15,7 +15,7 @@ echo $_SESSION;
 
 
 	<meta charset="utf-8"/>
-	<title>Trainingbook</title>
+	<title>blablabla</title>
 
 </head>
 
