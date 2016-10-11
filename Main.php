@@ -40,7 +40,7 @@ if (isset($_POST['password']) && isset($_POST['email'])) {
     <header>
         <h1>
             <i class=></i>Le superbe site à Nico <br>
-            <span> <a href="http://www.bonjourponey.fr/" target="_blank">Baseline </a> </span>
+            <span> <a href="Main.php">Baseline </a> </span>
         </h1>
 
         <form>
