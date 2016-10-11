@@ -14,7 +14,7 @@ echo $_SESSION;
 	<link href="css/list.css" rel="stylesheet" type="text/css">
 
 
-	<meta charset=utf-8"/>
+	<meta charset="utf-8"/>
 	<title>Trainingbook</title>
 
 </head>
@@ -24,7 +24,7 @@ echo $_SESSION;
 
 <header>
 	<h1>
-		<i class=></i>Training Béook <br>
+		<i class=></i>Le site à Nico <br>
 		<span> <a href="Main.php">Baseline </a> </span>
 	</h1>
 
