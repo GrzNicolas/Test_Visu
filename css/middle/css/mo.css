@@ -1,0 +1,240 @@
+/****************************************************************************************************************************/
+/* GLOBAL */
+/****************************************************************************************************************************/
+* {margin:0; padding:0;}
+li {list-style-type:none;}
+body {font-family:"NotoSans"; font-size:14px; color:#303030;}
+
+/* tablet */
+@media screen and (max-width:1024px) {
+	body {font-size:20px;}
+}
+
+/****************************************************************************************************************************/
+/* FONTS */
+/****************************************************************************************************************************/
+@font-face {font-family:"Raleway"; src:url("../fonts/Raleway.ttf");}
+@font-face {font-family:"NotoSans"; src:url("../fonts/NotoSans.ttf");}
+
+/****************************************************************************************************************************/
+/* ERROR */
+/****************************************************************************************************************************/
+span.error {display:block; margin-top:10px; padding-top:10px; font-size:1em; color:#DF2929; border-top:solid 1px #DF2929;}
+span.error i {width:30px;}
+input.error {border:solid 2px #DF2929 !important;}
+
+/****************************************************************************************************************************/
+/* TIME */
+/****************************************************************************************************************************/
+time {display:block; margin-top:10px; font-size:12px; color:#818181;}
+time i {margin:0 5px;}
+
+/* tablet */
+@media screen and (max-width:1024px) {
+	time {font-size:14px;}
+}
+
+/* smartphone */
+@media screen and (max-width:960px) {
+	time {font-size:0.5em;}
+}
+
+/****************************************************************************************************************************/
+/* BUTTON */
+/****************************************************************************************************************************/
+a.button {display:inline-block; padding:0 10px; height:30px; font-size:12px; color:#FFFFFF; line-height:30px; text-transform:uppercase; text-decoration:none; white-space:nowrap; border-radius:5px;}
+a.button i {margin-right:10px;}
+a.button.off {color:#FFFFFF; background-color:#303030;}
+a.button.on {color:#FFFFFF; background-color:#3498DB;}
+
+/* tablet */
+@media screen and (max-width:1024px) {
+	a.button {padding:5px 15px; font-size:16px;}
+}
+
+/****************************************************************************************************************************/
+/* UP */
+/****************************************************************************************************************************/
+.up {position:fixed; bottom:-60px; right:20px; font-size:40px; color:#5C6162; text-decoration:none;}
+
+/* tablet */
+@media screen and (max-width:1024px) {
+	.up {display:none;}
+}
+
+/* smartphone */
+@media screen and (max-width:960px) {
+	.up {display:none;}
+}
+
+/****************************************************************************************************************************/
+/* HEADER */
+/****************************************************************************************************************************/
+header {position:relative; height:400px; background:url("../img/background.jpg") top; background-size:cover;}
+header h1 {padding-top:50px; font-size:1em; font-weight:normal; color:#FFFFFF; text-align:center;}
+header h1 span {display:block; font-size:3em; font-weight:bold;}
+header figure {z-index:2; position:absolute; bottom:-70px; left:100px;}
+header figure img {width:200px; height:200px; border-radius:20px; border:solid 5px #FFFFFF;}
+header figure.on {z-index:4; position:fixed; top:-10px; bottom:inherit; left:50px;}
+header figure.on img {width:100px; height:100px; border-radius:10px; border:solid 3px #FFFFFF;}
+
+header form {position:absolute; top:200px; left:50%; margin-left:-167px; width:335px;}
+header form p {float:left;}
+header form label {display:block; width:40px; height:40px; text-align:center; line-height:40px; background-color:#FFFFFF; border-top:solid 1px #E2E2E2; border-radius:5px 0 0 5px; cursor:pointer;}
+header form input[type=text] {display:block; padding:0 10px; width:235px; height:41px; font-family:"NotoSans"; font-size:1em; color:#303030; background-color:#FFFFFF; border:none;}
+header form input[type=submit] {width:40px; height:41px; font-family:"NotoSans"; font-size:14px; color:#3498DB; text-align:center; background:none; background-color:#FFFFFF; border:none; border-radius:0 5px 5px 0; cursor:pointer;}
+
+header .menu {position:absolute; bottom:0; width:100%; height:50px; background-color:rgba(226,226,226,0.7);}
+header .menu ul {overflow:hidden; margin-left:310px;}
+header .menu li {float:left; position:relative;}
+header .menu li:first-of-type a:after {display:none;}
+header .menu li.new:before {content:""; display:block; position:absolute; bottom:0; width:150px; height:5px;}
+header .menu a {display:block; padding:0 20px; height:50px; font-size:12px; color:#303030; line-height:50px; text-align:center; text-transform:uppercase; text-decoration:none; transition:ease-in-out 0.2s;}
+header .menu a:after {content:""; display:block; float:left; margin:11px 0 0 -20px; width:1px; height:30px; background-color:#D5D5D5;}
+
+header .menu li.on.blue a, header .menu li.blue a:hover, header .menu li.new.blue:before {color:#FFFFFF; background-color:#3498DB;}
+header .menu li.on.green1 a, header .menu li.green1 a:hover, header .menu li.new.green1:before {color:#FFFFFF; background-color:#1ABC9C;}
+header .menu li.on.green2 a, header .menu li.green2 a:hover, header .menu li.new.green2:before {color:#FFFFFF; background-color:#2ECC71;}
+header .menu li.on.purple a, header .menu li.purple a:hover, header .menu li.new.purple:before {color:#FFFFFF; background-color:#9B59B6;}
+header .menu li.on.yellow a, header .menu li.yellow a:hover, header .menu li.new.yellow:before {color:#FFFFFF; background-color:#F1C40F;}
+header .menu li.on.grey a, header .menu li.grey a:hover, header .menu li.new.grey:before {color:#FFFFFF; background-color:#95A5A6;}
+header .menu li.on.orange a, header .menu li.orange a:hover, header .menu li.new.orange:before {color:#FFFFFF; background-color:#E67E22;}
+header .menu li.on.red a, header .menu li.red a:hover, header .menu li.new.red:before {color:#FFFFFF; background-color:#E74C3C;}
+
+header .menu.on {z-index:3; position:fixed; top:-10px; bottom:inherit; background-color:rgba(226,226,226,0.9);}
+header .menu.on ul {margin-left:156px;}
+header .menu.on a {padding:0 10px; width:inherit; line-height:60px;}
+header .menu.on a:after {display:none;}
+
+header .perso {position:absolute; bottom:60px; right:20px;}
+header .perso dl {overflow:hidden; margin-left:310px;}
+header .perso dt, header .perso dd {float:left;}
+header .perso dt {color:#FFFFFF; margin-right:10px; padding-right:20px; line-height:30px; border-right:solid 1px #FFFFFF;}
+header .perso a {display:block; width:30px; height:30px; line-height:30px; color:#FFFFFF; text-align:center; transition:ease-in-out 0.2s;}
+header .perso a:hover, header .perso a.on {background-color:#3498DB;}
+
+header .perso.on {z-index:4; position:fixed; bottom:inherit; top:5px; right:60px;}
+header .perso.on dl {margin-left:inherit;}
+header .perso.on dt {color:#303030; border-color: #303030;}
+header .perso.on a {color:#303030;}
+header .perso.on a.on {color:#FFFFFF;}
+header .perso.on a:hover {color:#FFFFFF;}
+
+/* tablet */
+@media screen and (max-width:1024px) and (orientation:landscape) {
+	header {height:200px;}
+	header h1 {padding:30px 0 0 30px; font-size:0.6em; text-align:left;}
+	header form {top:50px; margin-left:-70px;}
+	header form input[type=text] {width:150px; font-size:0.6em;}
+	header figure {left:30px;}
+	header figure img {width:130px; height:130px; border-radius:10px;}
+	
+	header .perso {bottom:inherit; top:30px;}
+	header .perso dt {float:inherit; margin-right:inherit; padding-right:inherit; font-size:0.8em; border-right:none;}
+	header .perso dd {float:right;}
+	header .perso a {width:40px; height:40px; line-height:40px; font-size:1.2em;}
+	
+	header .menu ul {margin-left:170px;}
+}
+
+@media screen and (max-width:1024px) and (orientation:portrait) {
+	header form input[type=text] {font-size:0.6em;}
+	header figure {left:30px;}
+	header figure img {width:130px; height:130px; border-radius:10px;}
+	header .menu ul {margin-left:170px;}
+}
+
+/* smartphone */
+@media screen and (max-width:640px) {
+	header {height:150px;}
+	header h1 {padding:45px 0 0 30px; font-size:0.5em; text-align:left;}
+	header figure {display:none;left:30px;}
+	
+	header .perso {bottom:inherit; top:10px; right:10px;}
+	header .perso dl {float:right; padding-top:45px;}
+	header .perso dt {display:none;}
+	header .perso dd {float:left;}
+	header .perso a {width:40px; height:40px; line-height:40px; font-size:1.2em;}
+	
+	header form {top:150px; left:inherit; margin-left:0; display:table; width:100%;}
+	header form p {display:table-cell; float:inherit; vertical-align:top;}
+	header form p:nth-of-type(1) {width:40px;}
+	header form p:nth-of-type(2) {width:100%;}
+	header form p:nth-of-type(3) {width:40px;}
+	header form label {background-color:#E2E2E2; border-radius:0;}
+	header form input[type=text] {width:100%; font-size:0.6em; background-color:#E2E2E2; border-radius:0;}
+	header form input[type=submit] {background-color:#E2E2E2; border-radius:0;}
+	
+	header .menu {bottom:-91px; background-color:#818181;}
+	header .menu ul {margin-left:inherit; margin:auto; display:table; width:95%;}
+	header .menu li {float:inherit; display:table-cell;}
+	header .menu a {padding:0 5px;}
+	header .menu a:after {display:none;}
+}
+
+/****************************************************************************************************************************/
+/* BREADCRUMB */
+/****************************************************************************************************************************/
+.breadcrumb {overflow:hidden; margin:20px 0 0 200px;}
+.breadcrumb li {float:left; font-size:1.3em;}
+.breadcrumb li:first-of-type {text-transform:uppercase;}
+.breadcrumb li:first-of-type:before {display:none;}
+.breadcrumb li:before {content:"/"; display:block; float:left; margin:0 10px;}
+.breadcrumb i {margin-right:10px;}
+.breadcrumb a {font-weight:bold; color:#303030;}
+
+/* tablet */
+@media screen and (max-width:1024px) {
+	.breadcrumb {margin:20px 0 0 160px;}
+	.breadcrumb li {font-size:1em;}
+}
+
+/* smartphone */
+@media screen and (max-width:960px) {
+	.breadcrumb {margin:100px 0 0 10px;}
+	.breadcrumb li {font-size:0.8em;}
+}
+
+/****************************************************************************************************************************/
+/* SECTION */
+/****************************************************************************************************************************/
+section {margin:auto; width:80%;}
+section .all {float:right; margin:10px 0 0 10px;}
+
+/* tablet */
+@media screen and (max-width:1024px) {
+	section {width:95%;}
+}
+
+/* smartphone */
+@media screen and (max-width:960px) {
+	section .all {float:inherit; display:block; margin:auto; margin-top:50px; width:275px;}
+}
+
+/****************************************************************************************************************************/
+/* FOOTER */
+/****************************************************************************************************************************/
+footer {padding:70px 0 30px 0; font-size:0.8em; text-align:center;}
+footer a {text-decoration:underline; color:#303030;}
+
+/* smartphone */
+@media screen and (max-width:960px) {
+	footer {padding:50px 0 30px 0; font-size:0.5em;}
+}
+
+/****************************************************************************************************************************/
+/* MIDDLE OFFICE */
+/****************************************************************************************************************************/
+#middle article {margin:auto; margin-top:70px; width:327px;}
+#middle article form {overflow:hidden;}
+#middle article div {margin:20px 0;}
+#middle article img {width:327px; border-radius:10px;}
+#middle article div.error {color:#ff0000; font-weight:bold; text-align:center;}
+#middle article input {display:block; padding:10px; width:305px; height:30px; font-family:"NotoSans"; font-size:1em; color:#303030; background-color:#FFFFFF; border:none; border:solid 1px #D5D5D5; border-radius:10px;}
+#middle article input[type=submit] {width:325px; height:50px; text-align:center; text-transform:uppercase; background-color:#E2E2E2; cursor:pointer; transition:ease-in-out 0.2s;}
+#middle article input[type=submit]:hover {color:#FFFFFF; background-color:#3498DB;}
+
+/* smartphone */
+@media screen and (max-width:960px) {
+	#middle article {margin-top:10px;}
+}

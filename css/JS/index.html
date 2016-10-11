@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery jScroll Plugin Example</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="jquery.jscroll.min.js"></script>
+
+<style type="text/css">
+.scroll {
+border: 1px solid #aaa;
+padding: 5px 10px;
+height: 300px;
+width: 400px;
+overflow-y: scroll;
+margin: 100px 0 20px 0;
+background: #ffc;
+}
+</style>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/other/jQuery-Infinite-Scrolling-Auto-Paging-Plugin-jScroll.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="scroll" data-ui="jscroll-default" style="margin-top:150px;">
+<h3>Page 1 of jScroll Example - jQuery Infinite Scrolling Plugin</h3>
+<p>This is the content of <strong>page 1</strong> in the jScroll example. Scroll to the bottom of this box to load the next set of content.</p>
+<p>This is example text for the jScroll demonstration. jScroll is a jQuery plugin for infinite scrolling, endless scrolling, lazy loading, auto-paging, or whatever you may call it.</p>
+<p>With jScroll, you can initialize the scroller on an element with a fixed height and overflow setting of &quot;auto&quot; or &quot;scroll,&quot; or it can be set on a standard block-level element within the document and the scrolling will be initialized based on the brower window&#39;s scroll position.</p>
+<a href="example-page2.html">next</a> </div>
+<script>
+$('.scroll').jscroll();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /trbook
+RewriteOptions Inherit
+
+#DYNAMIQUE
+RewriteRule ^Acceuil\.html$ Main.php [L]
+RewriteRule ^CSS\.html$ Main.php [L]
+RewriteRule ^PHP\.html$ Main.php [L]
+RewriteRule ^Empire\.html article.php?ID=1 [L]
+RewriteRule ^Chaos\.html article.php?ID=2 [L]
+RewriteRule ^Article_CSS\.html article.php?ID=7 [L]

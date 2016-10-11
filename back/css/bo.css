@@ -1,0 +1,157 @@
+/****************************************************************************************************************************/
+/* GLOBAL */
+/****************************************************************************************************************************/
+* {margin:0; padding:0;}
+li {list-style-type:none;}
+body {font-family:"NotoSans"; font-size:14px; color:#303030;}
+
+/* tablet */
+@media screen and (max-width:1024px) {
+	body {font-size:20px;}
+}
+
+/****************************************************************************************************************************/
+/* FONTS */
+/****************************************************************************************************************************/
+@font-face {font-family:"Raleway"; src:url("../fonts/Raleway.ttf");}
+@font-face {font-family:"NotoSans"; src:url("../fonts/NotoSans.ttf");}
+
+/****************************************************************************************************************************/
+/* ERROR */
+/****************************************************************************************************************************/
+span.error {display:block; margin-top:10px; padding-top:10px; font-size:1em; color:#DF2929; border-top:solid 1px #DF2929;}
+span.error i {width:30px;}
+input.error {border:solid 2px #DF2929 !important;}
+
+/****************************************************************************************************************************/
+/* TIME */
+/****************************************************************************************************************************/
+time {display:block; margin-top:10px; font-size:12px; color:#818181;}
+time i {margin:0 5px;}
+
+/* tablet */
+@media screen and (max-width:1024px) {
+	time {font-size:14px;}
+}
+
+/* smartphone */
+@media screen and (max-width:960px) {
+	time {font-size:0.5em;}
+}
+
+/****************************************************************************************************************************/
+/* BUTTON */
+/****************************************************************************************************************************/
+a.button {display:inline-block; padding:0 10px; height:30px; font-size:12px; color:#FFFFFF; line-height:30px; text-transform:uppercase; text-decoration:none; white-space:nowrap; border-radius:5px;}
+a.button i {margin-right:10px;}
+a.button.off {color:#FFFFFF; background-color:#303030;}
+a.button.on {color:#FFFFFF; background-color:#3498DB;}
+
+/* tablet */
+@media screen and (max-width:1024px) {
+	a.button {padding:5px 15px; font-size:16px;}
+}
+
+/****************************************************************************************************************************/
+/* UP */
+/****************************************************************************************************************************/
+.up {position:fixed; bottom:-60px; right:20px; font-size:40px; color:#5C6162; text-decoration:none;}
+
+/* tablet */
+@media screen and (max-width:1024px) {
+	.up {display:none;}
+}
+
+/* smartphone */
+@media screen and (max-width:960px) {
+	.up {display:none;}
+}
+
+/****************************************************************************************************************************/
+/* BACK OFFICE */
+/****************************************************************************************************************************/
+body {background-color:#262626;}
+
+.menu {z-index:2; position:fixed; width:100%; height:60px; background-color:rgba(64,140,198,0.8); box-shadow:0px 0px 10px #000000;}
+.menu h1 {position:absolute; top:20px; left:50px; font-size:14px; font-weight:normal; color:#FFFFFF;}
+.menu h1 a {color:#FFFFFF; font-weight:bold; text-decoration:underline;}
+.menu h2 {position:absolute; top:20px; right:50px; font-size:14px; font-weight:normal; text-transform:uppercase; color:#262626;}
+
+.menu ul {position:absolute; top:5px; left:50%; overflow:hidden; margin-left:-225px;}
+.menu ul li {float:left;}
+.menu ul li:first-of-type a {border-radius:5px 0 0 5px;}
+.menu ul li:last-of-type a {border-radius:0 5px 5px 0;}
+.menu ul li:first-of-type a:after {display:none;}
+.menu ul li a {display:block; float:right; margin-top:10px; width:150px; height:30px; font-size:12px; color:#303030; line-height:30px; text-align:center; text-transform:uppercase; text-decoration:none; background-color:rgba(226,226,226,0.7); transition:ease-in-out 0.2s;}
+.menu ul li a:after {content:""; display:block; float:left; margin-top:4px; width:1px; height:22px; background-color:#D5D5D5;}
+.menu ul li a:hover {color:#FFFFFF; background-color:#F1C40F;}
+.menu ul li a.on {color:#FFFFFF; background-color:#E67E22;}
+.menu ul li i {margin-right:5px;}
+
+section {margin:auto; padding:100px 0 50px 0; width:90%; color:#FFFFFF;}
+section h2 {margin:auto; width:300px; margin-top:50px; padding:10px; font-size:18px; font-weight:bold; color:#1ABC9C; text-align:center; border:solid 1px #1ABC9C; border-radius:5px;}
+section h2 i {margin-right:10px;}
+section h3 {margin-bottom:20px; text-align:center;}
+
+section.category dl {width:511px;}
+section.category ul p:nth-of-type(1) {width:50px;}
+section.category ul p:nth-of-type(2) {width:50%;}
+section.category ul p:nth-of-type(3) {width:20%;}
+section.category ul p:nth-of-type(4) {text-align:right;}
+
+section.article dl {width:511px;}
+section.article ul p:nth-of-type(1) {width:35%;}
+section.article ul p:nth-of-type(2) {width:30%;}
+section.article ul p:nth-of-type(3) {width:10%;}
+section.article ul p:nth-of-type(4) {text-align:right;}
+
+section dl {overflow:hidden; margin:auto; padding-bottom:20px; color:#FFFFFF; border-bottom:solid 1px #FFFFFF;}
+section dl dt {float:left; margin-right:20px; line-height:30px;}
+section dl dd {float:left;}
+section dl i {margin-right:10px;}
+section dl dd a:after {content:""; display:block; float:right; margin-top:5px; width:1px; height:20px; background-color:#D5D5D5;}
+section dl dd:last-of-type a:after {display:none;}
+section dl dd a {display:block; width:100px; height:30px; color:#FFFFFF; text-decoration:none; line-height:30px; text-align:center; transition:ease-in-out 0.2s;}
+section dl dd:first-of-type a {border-radius:5px 0 0 5px;}
+section dl dd:last-of-type a {border-radius:0 5px 5px 0;}
+section dl a.on {background-color:#1ABC9C; color:#FFFFFF;}
+section dl a:hover {background-color:#FFFFFF; color:#1ABC9C;}
+
+section ul {width:100%; margin-top:50px;}
+section ul li {display:table; width:100%; padding:20px 0; border-bottom:solid 1px #474747;}
+section ul li.first {border-top:solid 1px #474747;}
+section ul li:last-of-type {border-bottom:none;}
+section ul img {height:100px; border-radius:5px;}
+section ul p {display:table-cell; vertical-align:middle;}
+section ul p i {margin-right:10px;}
+section ul span {display:block; width:20px; height:20px; border-radius:5px;}
+
+section ul span.blue {background-color:#3498DB;}
+section ul span.green1 {background-color:#1ABC9C;}
+section ul span.green2 {background-color:#2ECC71;}
+section ul span.purple {background-color:#9B59B6;}
+section ul span.yellow {background-color:#F1C40F;}
+section ul span.grey {background-color:#95A5A6;}
+section ul span.orange {background-color:#E67E22;}
+section ul span.red {background-color:#E74C3C;}
+
+section ul a {display:inline-block; margin-left:20px; padding:0 10px; height:30px; font-size:12px; color:#FFFFFF; line-height:30px; text-transform:uppercase; text-decoration:none; white-space:nowrap; border-radius:5px;}
+section ul li a.valid {background-color:#2ECC71;}
+section ul li a.edit {background-color:#206CD4;}
+section ul li a.delete {background-color:#E74C3C;}
+section ul i {margin-right:10px;}
+
+section form {margin-bottom:50px; padding-bottom:50px; border-bottom:dashed 1px #474747;}
+section form div.line {overflow:hidden; margin:auto; margin-bottom:10px; display:table; width:80%; text-align:center;}
+section form div.line:last-of-type {margin-bottom:0;}
+section form p {display:table-cell; padding-right:20px; width:50%; text-align:left; vertical-align:middle;}
+section form label {display:block; line-height:40px; text-align:right; cursor:pointer;}
+section form input[type=text], section form input[type=email], section form input[type=password], section form select {display:block; padding:0 10px; width:250px; height:40px; font-family:"Raleway"; font-size:14px; color:#303030; background-color:#FFFFFF; border:none; border:solid 1px #E2E2E2; border-radius:5px;}
+section form textarea {display:block; padding:0 10px; width:250px; height:240px; font-family:"Raleway"; font-size:14px; color:#303030; background-color:#FFFFFF; border:none; border:solid 1px #E2E2E2; border-radius:5px;}
+section form select {width:272px;}
+section form input[type=submit] {width:272px; height:30px; font-family:"NotoSans"; font-size:12px; color:#FFFFFF; line-height:30px; text-transform:uppercase; text-decoration:none; white-space:nowrap; background-color:#206CD4; border:none; border-radius:5px; cursor:pointer;}
+section form span.error {display:block; margin-top:10px; color:#C0392B; text-align:left;}
+section form a.image {color:#FFFFFF; text-decoration:underline;}
+section form a.cancel {display:inline-block; margin-right:20px; padding:0 10px; height:30px; font-size:12px; color:#FFFFFF; line-height:30px; text-transform:uppercase; text-decoration:none; white-space:nowrap; background-color:#E74C3C; border-radius:5px;}
+section form a.cancel i {margin-right:10px;}
+section form img {width:274px; border-radius:5px;}
