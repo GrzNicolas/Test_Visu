@@ -24,7 +24,7 @@ echo $_SESSION;
 
 <header>
 	<h1>
-		<i class=></i>Le site à Nico <br>
+		<i class=></i>Le site à Nico...<br>
 		<span> <a href="Main.php">Baseline </a> </span>
 	</h1>
 
